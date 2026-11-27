@@ -10,8 +10,12 @@ Output:
 "Odd"
 */
 
-const num = 7;
+const num = 6;
 
 // TODO: Write your solution here
+function evenOdd(number) {
+  return number % 2 == 0 ? "Even" : "Odd";
+}
+const result = evenOdd(num);
 
 console.log(result);
