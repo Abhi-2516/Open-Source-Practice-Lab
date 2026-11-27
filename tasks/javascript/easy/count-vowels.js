@@ -14,4 +14,12 @@ const str = "opensource";
 
 // TODO: Write your solution here
 
+const couterVolwels = (str) =>
+  str
+    .split("")
+    .reduce(
+      (count, char) => ("aeiouAEIOU".includes(char) ? count + 1 : count),
+      0,
+    );
+const count = couterVolwels(str);
 console.log(count);
